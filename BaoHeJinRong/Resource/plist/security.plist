@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>实名验证</string>
+			<key>viewController</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>手机绑定</string>
+			<key>viewController</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>交易密码</string>
+			<key>viewController</key>
+			<string></string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>手势密码</string>
+			<key>viewController</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>修改手势密码</string>
+			<key>viewController</key>
+			<string></string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>消息提醒设置</string>
+			<key>viewController</key>
+			<string></string>
+		</dict>
+	</array>
+</array>
+</plist>

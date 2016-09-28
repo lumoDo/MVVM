@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>红包</string>
+		<key>icon</key>
+		<string>red_packets</string>
+		<key>viewController</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>灵活宝</string>
+		<key>icon</key>
+		<string>regular</string>
+		<key>viewController</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>定期</string>
+		<key>icon</key>
+		<string>custom_service</string>
+		<key>viewController</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>资金记录</string>
+		<key>icon</key>
+		<string>fund_record</string>
+		<key>viewController</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>银行卡</string>
+		<key>icon</key>
+		<string>bank_card</string>
+		<key>viewController</key>
+		<string>BHBankCardViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>客服</string>
+		<key>icon</key>
+		<string>zero</string>
+		<key>viewController</key>
+		<string></string>
+	</dict>
+</array>
+</plist>
