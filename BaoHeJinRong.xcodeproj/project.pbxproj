@@ -17,6 +17,9 @@
 		790D49351D9A673800C07999 /* BHGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790D49341D9A673800C07999 /* BHGetViewController.m */; };
 		790D49381D9A708400C07999 /* BHBindCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790D49371D9A708400C07999 /* BHBindCardViewController.m */; };
 		790D493B1D9A741600C07999 /* BHSendCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 790D493A1D9A741600C07999 /* BHSendCodeView.m */; };
+		79100DF71DAE41D5006E1217 /* BHLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 79100DF21DAE41D5006E1217 /* BHLoginRequest.m */; };
+		79100DF81DAE41D5006E1217 /* BHRequestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 79100DF41DAE41D5006E1217 /* BHRequestBase.m */; };
+		79100DF91DAE41D5006E1217 /* YYRequestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 79100DF61DAE41D5006E1217 /* YYRequestBase.m */; };
 		791476A81D93B78C00BDEC59 /* BHUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791476A71D93B78C00BDEC59 /* BHUserInfoViewController.m */; };
 		791476AF1D93BFB300BDEC59 /* BHMyViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 791476AE1D93BFB300BDEC59 /* BHMyViewModel.m */; };
 		791476DE1D94F77E00BDEC59 /* accountInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 791476DD1D94F77E00BDEC59 /* accountInfo.plist */; };
@@ -128,6 +131,12 @@
 		790D49371D9A708400C07999 /* BHBindCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHBindCardViewController.m; sourceTree = "<group>"; };
 		790D49391D9A741600C07999 /* BHSendCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHSendCodeView.h; sourceTree = "<group>"; };
 		790D493A1D9A741600C07999 /* BHSendCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHSendCodeView.m; sourceTree = "<group>"; };
+		79100DF11DAE41D5006E1217 /* BHLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHLoginRequest.h; sourceTree = "<group>"; };
+		79100DF21DAE41D5006E1217 /* BHLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHLoginRequest.m; sourceTree = "<group>"; };
+		79100DF31DAE41D5006E1217 /* BHRequestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHRequestBase.h; sourceTree = "<group>"; };
+		79100DF41DAE41D5006E1217 /* BHRequestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHRequestBase.m; sourceTree = "<group>"; };
+		79100DF51DAE41D5006E1217 /* YYRequestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRequestBase.h; sourceTree = "<group>"; };
+		79100DF61DAE41D5006E1217 /* YYRequestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRequestBase.m; sourceTree = "<group>"; };
 		791476A61D93B78C00BDEC59 /* BHUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHUserInfoViewController.h; sourceTree = "<group>"; };
 		791476A71D93B78C00BDEC59 /* BHUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHUserInfoViewController.m; sourceTree = "<group>"; };
 		791476AD1D93BFB300BDEC59 /* BHMyViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHMyViewModel.h; sourceTree = "<group>"; };
@@ -447,6 +456,12 @@
 		7938284C1D913E0700849415 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				79100DF11DAE41D5006E1217 /* BHLoginRequest.h */,
+				79100DF21DAE41D5006E1217 /* BHLoginRequest.m */,
+				79100DF31DAE41D5006E1217 /* BHRequestBase.h */,
+				79100DF41DAE41D5006E1217 /* BHRequestBase.m */,
+				79100DF51DAE41D5006E1217 /* YYRequestBase.h */,
+				79100DF61DAE41D5006E1217 /* YYRequestBase.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -974,6 +989,7 @@
 				793828DF1D913E0700849415 /* CJSONDeserializer.m in Sources */,
 				793829131D913E0700849415 /* SelectPayByView.m in Sources */,
 				7986290A1D99205B0027FEAE /* BHScrollMenu.m in Sources */,
+				79100DF81DAE41D5006E1217 /* BHRequestBase.m in Sources */,
 				793829141D913E0700849415 /* SmallBuyView.m in Sources */,
 				793828DD1D913E0700849415 /* CDataScanner.m in Sources */,
 				793828E21D913E0700849415 /* JSONKit.m in Sources */,
@@ -982,6 +998,7 @@
 				793828E61D913E0700849415 /* SBJsonBase.m in Sources */,
 				790D493B1D9A741600C07999 /* BHSendCodeView.m in Sources */,
 				793829091D913E0700849415 /* GestureViewController.m in Sources */,
+				79100DF71DAE41D5006E1217 /* BHLoginRequest.m in Sources */,
 				791476A81D93B78C00BDEC59 /* BHUserInfoViewController.m in Sources */,
 				791476ED1D95088C00BDEC59 /* BHRiskAssessmentView.m in Sources */,
 				790D49351D9A673800C07999 /* BHGetViewController.m in Sources */,
@@ -1017,6 +1034,7 @@
 				793828DE1D913E0700849415 /* CDataScanner_Extensions.m in Sources */,
 				793828E01D913E0700849415 /* CJSONScanner.m in Sources */,
 				7938290D1D913E0700849415 /* PCCircleView.m in Sources */,
+				79100DF91DAE41D5006E1217 /* YYRequestBase.m in Sources */,
 				7938290B1D913E0700849415 /* PCCircle.m in Sources */,
 				793828E41D913E0700849415 /* NSString+SBJSON.m in Sources */,
 				793829161D913E0700849415 /* UIColor+HXCategory.m in Sources */,
