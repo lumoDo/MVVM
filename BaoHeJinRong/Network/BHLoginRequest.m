@@ -29,8 +29,8 @@ static BHLoginRequest* loginRequest = nil;
     NSDictionary* postParam = nil;
     if (param && [param count] > 0)
     {
-        NSString* json = [UTILE dataToJson:param];
-        postParam = @{ @"content" : [UTILE encryption:json withKey:DES_KEY] };
+//        NSString* json = [UTILE dataToJson:param];
+//        postParam = @{ @"content" : [UTILE encryption:json withKey:DES_KEY] };
     }
     
     [self request:post withUrl:@"url" andParams:postParam resultBlock:^(ResultStatus status, id result) {

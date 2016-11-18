@@ -49,7 +49,7 @@
         if (RS_SUCCEED == status)
         {
 //            result = [self decryption:result];
-            NSDictionary* resultDict = [UTILE jsonToData:result];
+            NSDictionary* resultDict;// = [UTILE jsonToData:result];
             int statusCode = RS_FAILED;
             if (resultDict)
             {

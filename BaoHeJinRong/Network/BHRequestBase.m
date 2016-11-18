@@ -1,7 +1,7 @@
 
 
 #import "BHRequestBase.h"
-#import <AFNetworking.h>
+#import "AFNetworking.h"
 
 @implementation UploadFile
 
@@ -161,10 +161,10 @@
     
 }
 
-- (NSString*)decryption:(NSString*)result
-{
-    return [UTILE decryption:result withKey:DES_KEY];
-}
+//- (NSString*)decryption:(NSString*)result
+//{
+//    return [UTILE decryption:result withKey:DES_KEY];
+//}
 
 - (void)onAnalysisResult:(ResultStatus)status andResult:(NSString*)result resultBlock:(RequestResultBlock)block
 {
@@ -179,7 +179,7 @@
         {
             //解密
 //            result = [self decryption:result];
-            NSDictionary* resultDict = [UTILE jsonToData:result];
+            NSDictionary* resultDict ;//= [UTILE jsonToData:result];
             int statusCode = RS_FAILED;
             if (resultDict)
             {

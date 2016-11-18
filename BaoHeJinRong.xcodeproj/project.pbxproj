@@ -12,14 +12,12 @@
 		33222FEB1D90D1D4004FF838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33222FEA1D90D1D4004FF838 /* Assets.xcassets */; };
 		33222FEE1D90D1D4004FF838 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33222FEC1D90D1D4004FF838 /* LaunchScreen.storyboard */; };
 		332230051D911AAD004FF838 /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 332230041D911AAD004FF838 /* PushConfig.plist */; };
-		6F999FC8219310AFADC6B803 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE48919C46BF8089B326A0C /* libPods.a */; };
 		790D49321D9A521A00C07999 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 790D49301D9A50DA00C07999 /* MZTimerLabel.m */; };
 		790D49351D9A673800C07999 /* BHGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790D49341D9A673800C07999 /* BHGetViewController.m */; };
 		790D49381D9A708400C07999 /* BHBindCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790D49371D9A708400C07999 /* BHBindCardViewController.m */; };
 		790D493B1D9A741600C07999 /* BHSendCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 790D493A1D9A741600C07999 /* BHSendCodeView.m */; };
 		79100DF71DAE41D5006E1217 /* BHLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 79100DF21DAE41D5006E1217 /* BHLoginRequest.m */; };
 		79100DF81DAE41D5006E1217 /* BHRequestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 79100DF41DAE41D5006E1217 /* BHRequestBase.m */; };
-		79100DF91DAE41D5006E1217 /* YYRequestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 79100DF61DAE41D5006E1217 /* YYRequestBase.m */; };
 		791476A81D93B78C00BDEC59 /* BHUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791476A71D93B78C00BDEC59 /* BHUserInfoViewController.m */; };
 		791476AF1D93BFB300BDEC59 /* BHMyViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 791476AE1D93BFB300BDEC59 /* BHMyViewModel.m */; };
 		791476DE1D94F77E00BDEC59 /* accountInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 791476DD1D94F77E00BDEC59 /* accountInfo.plist */; };
@@ -136,8 +134,6 @@
 		79100DF21DAE41D5006E1217 /* BHLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHLoginRequest.m; sourceTree = "<group>"; };
 		79100DF31DAE41D5006E1217 /* BHRequestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHRequestBase.h; sourceTree = "<group>"; };
 		79100DF41DAE41D5006E1217 /* BHRequestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHRequestBase.m; sourceTree = "<group>"; };
-		79100DF51DAE41D5006E1217 /* YYRequestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRequestBase.h; sourceTree = "<group>"; };
-		79100DF61DAE41D5006E1217 /* YYRequestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRequestBase.m; sourceTree = "<group>"; };
 		791476A61D93B78C00BDEC59 /* BHUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHUserInfoViewController.h; sourceTree = "<group>"; };
 		791476A71D93B78C00BDEC59 /* BHUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHUserInfoViewController.m; sourceTree = "<group>"; };
 		791476AD1D93BFB300BDEC59 /* BHMyViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHMyViewModel.h; sourceTree = "<group>"; };
@@ -338,7 +334,6 @@
 				793828F61D913E0700849415 /* libWeiboSDK.a in Frameworks */,
 				793828FC1D913E0700849415 /* libWeChatSDK.a in Frameworks */,
 				793828EA1D913E0700849415 /* libUMSocial_Sdk_4.4.a in Frameworks */,
-				6F999FC8219310AFADC6B803 /* libPods.a in Frameworks */,
 				793828F41D913E0700849415 /* libSocialSina.a in Frameworks */,
 				793828F91D913E0700849415 /* TencentOpenAPI.framework in Frameworks */,
 				793828FB1D913E0700849415 /* libSocialWechat.a in Frameworks */,
@@ -465,8 +460,6 @@
 				79100DF21DAE41D5006E1217 /* BHLoginRequest.m */,
 				79100DF31DAE41D5006E1217 /* BHRequestBase.h */,
 				79100DF41DAE41D5006E1217 /* BHRequestBase.m */,
-				79100DF51DAE41D5006E1217 /* YYRequestBase.h */,
-				79100DF61DAE41D5006E1217 /* YYRequestBase.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -884,6 +877,7 @@
 					33222FDA1D90D1D4004FF838 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = PNYAK8GLHJ;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -1058,7 +1052,6 @@
 				793828DE1D913E0700849415 /* CDataScanner_Extensions.m in Sources */,
 				793828E01D913E0700849415 /* CJSONScanner.m in Sources */,
 				7938290D1D913E0700849415 /* PCCircleView.m in Sources */,
-				79100DF91DAE41D5006E1217 /* YYRequestBase.m in Sources */,
 				7938290B1D913E0700849415 /* PCCircle.m in Sources */,
 				793828E41D913E0700849415 /* NSString+SBJSON.m in Sources */,
 				793829161D913E0700849415 /* UIColor+HXCategory.m in Sources */,
@@ -1132,7 +1125,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1173,7 +1166,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1193,7 +1186,7 @@
 					"$(PROJECT_DIR)/BaoHeJinRong/Resource/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
 				INFOPLIST_FILE = BaoHeJinRong/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1205,6 +1198,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hexun.BaoHeJinRong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1221,7 +1215,7 @@
 					"$(PROJECT_DIR)/BaoHeJinRong/Resource/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
 				INFOPLIST_FILE = BaoHeJinRong/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1233,6 +1227,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hexun.BaoHeJinRong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
