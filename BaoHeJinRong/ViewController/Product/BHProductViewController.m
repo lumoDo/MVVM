@@ -7,8 +7,8 @@
 //
 
 #import "BHProductViewController.h"
-
-@interface BHProductViewController ()
+#import <WebKit/WebKit.h>
+@interface BHProductViewController ()<WKNavigationDelegate,WKUIDelegate>
 
 @end
 
@@ -45,6 +45,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.frame];
+    webView.backgroundColor = [UIColor colorForKey:kColorBackground];
+    webView.navigationDelegate = self;
+    webView.UIDelegate = self;
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:URL_Product]]];
+    [self.view  addSubview:webView];
     // Do any additional setup after loading the view.
 }
 

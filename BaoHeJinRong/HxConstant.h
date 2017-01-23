@@ -38,35 +38,16 @@
 #define APPVERSION                  @"2"
 #define PARAMETERSTRING             [NSString stringWithFormat:@"knowChannel=%@&appVersion=%@",KNOWCHANNEL,APPVERSION]
 #define IsTest 1    //1测试,0正式
-//IPAddress
-#define H5HEADURL                   (IsTest?@"http://10.1.211.51":@"https://h5.rhjf.com.cn")
-//首页
-#define URL_FIRST                   [NSString stringWithFormat:@"%@/home.html?%@",H5HEADURL,PARAMETERSTRING]
-//产品列表
-#define URL_PRODUCTLIST             [NSString stringWithFormat:@"%@/productlist.html?%@&type=",H5HEADURL,PARAMETERSTRING]
-//账户资产
-#define URL_MYASSETS                [NSString stringWithFormat:@"%@/app/web/assetIndex?%@",H5HEADURL,PARAMETERSTRING]
-//登录
-#define URL_LOGIN                   [NSString stringWithFormat:@"%@/app/publicweb/commLoginIndex?%@",H5HEADURL,PARAMETERSTRING]
-//修改登录密码
-#define URL_LOGIN_CHANGE            [NSString stringWithFormat:@"%@/app/web/updatePassIndex?%@",H5HEADURL,PARAMETERSTRING]
-//登出
-#define URL_LOGINOUT                [NSString stringWithFormat:@"%@/app/publicweb/logout?%@",H5HEADURL,PARAMETERSTRING]
-//搜索
-#define URL_SEARCH                  [NSString stringWithFormat:@"%@/search.html?%@",H5HEADURL,PARAMETERSTRING]
-//实名认证
-#define URL_NAME                    [NSString stringWithFormat:@"%@/app/web/personalSetIndex?%@",H5HEADURL,PARAMETERSTRING]
-//意见反馈
-#define URL_FEEDBACK                [NSString stringWithFormat:@"%@/app/web/feedBackIndex?%@",H5HEADURL,PARAMETERSTRING]
-//关于我们
-#define URL_ABOUT                   [NSString stringWithFormat:@"%@/aboutsus.html?%@",H5HEADURL,PARAMETERSTRING]
-//安全保障
-#define URL_GUARANTEE               [NSString stringWithFormat:@"%@/safety.html?%@",H5HEADURL,PARAMETERSTRING]
-//我的银行卡
-#define URL_MYBANKCARD              [NSString stringWithFormat:@"%@/app/web/bankCard/list?%@",H5HEADURL,PARAMETERSTRING]
-//设置交易密码
-#define URL_SETBUYPASSWORD          [NSString stringWithFormat:@"%@/app/web/updateTransPwdIndex?%@",H5HEADURL,PARAMETERSTRING]
 
+#define H5HEADURL                   (IsTest?@"http://10.1.110.45:8080":@"https://h5.rhjf.com.cn")
+
+//****H5_URL****
+//首页
+#define H5_URL_FIRST        [NSString stringWithFormat:@"%@/BaoHeJinRong/H5/html/index.html",H5HEADURL]
+//理财
+#define URL_Product         [NSString stringWithFormat:@"%@/BaoHeJinRong/H5/html/licai.html",H5HEADURL]
+//发现
+#define H5_URL_Discovery    [NSString stringWithFormat:@"%@/BaoHeJinRong/H5/html/faxian.html",H5HEADURL]
 
 
 /****文字内容***/

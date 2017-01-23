@@ -83,11 +83,11 @@
 #pragma mark - 登出操作
     NSData *data = [[NSUserDefaults standardUserDefaults] valueForKey:User_Current];
     if (data != nil){
-        UIWebView *webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
-        NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:URL_LOGINOUT] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:WEBVIEW_TIMEOUT];
-        [webView loadRequest:request];
-        [self.view addSubview:webView];
-        [webView setHidden:YES];
+//        UIWebView *webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
+//        NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:URL_LOGINOUT] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:WEBVIEW_TIMEOUT];
+//        [webView loadRequest:request];
+//        [self.view addSubview:webView];
+//        [webView setHidden:YES];
         [[NSUserDefaults standardUserDefaults]removeObjectForKey:User_Current];
         [self doLogout];
     }

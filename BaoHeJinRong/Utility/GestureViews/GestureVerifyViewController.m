@@ -168,10 +168,10 @@
     [AppDelegate App].isHaveGesture = NO;
     if ([AppDelegate App].userDic != nil){
         UIWebView *webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
-        NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:URL_LOGINOUT] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:WEBVIEW_TIMEOUT];
-        [webView loadRequest:request];
-        [self.view addSubview:webView];
-        [webView setHidden:YES];
+//        NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:URL_LOGINOUT] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:WEBVIEW_TIMEOUT];
+//        [webView loadRequest:request];
+//        [self.view addSubview:webView];
+//        [webView setHidden:YES];
 #pragma mark - 清除webCookies
         NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
         NSArray* heXunCookies = [storage cookiesForURL:[NSURL URLWithString:H5HEADURL]];

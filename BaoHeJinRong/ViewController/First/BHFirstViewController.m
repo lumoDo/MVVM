@@ -7,8 +7,9 @@
 //
 
 #import "BHFirstViewController.h"
+#import <WebKit/WebKit.h>
 
-@interface BHFirstViewController ()
+@interface BHFirstViewController ()<WKNavigationDelegate,WKUIDelegate>
 
 @end
 
@@ -42,8 +43,15 @@
     [self.navigationController setNavigationBarHidden:YES];
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.frame];
+    webView.backgroundColor = [UIColor colorForKey:kColorBackground];
+    webView.navigationDelegate = self;
+    webView.UIDelegate = self;
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:H5_URL_FIRST]]];
+    [self.view  addSubview:webView];
     // Do any additional setup after loading the view.
 }
 
@@ -51,7 +59,19 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+#pragma mark -WKNavigationDelegate
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
+{
+    NSURL *URL = navigationAction.request.URL;
+    NSString *resourceSpecifier = [URL resourceSpecifier];
+    
+    if ([resourceSpecifier containsString:@"myAwards"])
+    {
+        decisionHandler(WKNavigationActionPolicyCancel);
+        return;
+    }
+    decisionHandler(WKNavigationActionPolicyAllow);
+}
 /*
 #pragma mark - Navigation
 

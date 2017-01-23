@@ -7,8 +7,9 @@
 //
 
 #import "BHDiscoveryViewController.h"
+#import <WebKit/WebKit.h>
 
-@interface BHDiscoveryViewController ()
+@interface BHDiscoveryViewController ()<WKUIDelegate,WKNavigationDelegate>
 
 @end
 
@@ -43,7 +44,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.frame];
+    webView.backgroundColor = [UIColor colorForKey:kColorBackground];
+    webView.navigationDelegate = self;
+    webView.UIDelegate = self;
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:H5_URL_Discovery]]];
+    [self.view  addSubview:webView];
 }
 
 - (void)didReceiveMemoryWarning {
